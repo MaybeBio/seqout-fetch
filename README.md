@@ -51,6 +51,10 @@ Deliberately **not** included:
 ## Install
 
 ```bash
+# from pypi
+pip install seqout-fetch
+
+# OR clone the repo and install in editable mode
 pip install -e .
 ```
 
