@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="seqout-fetch">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e0f2fe"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#bg)"/>
+
+  <!-- table: 4 rows, 4 columns -->
+  <g fill="#ffffff" fill-opacity="0.55">
+    <circle cx="34" cy="40" r="4.5"/>
+    <circle cx="54" cy="40" r="4.5"/>
+    <circle cx="74" cy="40" r="4.5"/>
+    <circle cx="94" cy="40" r="4.5"/>
+
+    <circle cx="34" cy="60" r="4.5"/>
+    <circle cx="54" cy="60" r="4.5"/>
+    <circle cx="74" cy="60" r="4.5"/>
+    <circle cx="94" cy="60" r="4.5"/>
+
+    <circle cx="34" cy="80" r="4.5"/>
+    <circle cx="54" cy="80" r="4.5"/>
+    <circle cx="74" cy="80" r="4.5"/>
+    <circle cx="94" cy="80" r="4.5"/>
+
+    <circle cx="34" cy="100" r="4.5"/>
+    <circle cx="54" cy="100" r="4.5"/>
+    <circle cx="74" cy="100" r="4.5"/>
+    <circle cx="94" cy="100" r="4.5"/>
+  </g>
+
+  <!-- selected row: the filter result -->
+  <rect x="20" y="52" width="88" height="16" rx="8" fill="url(#bar)"/>
+  <g fill="#1d4ed8">
+    <circle cx="34" cy="60" r="4.5"/>
+    <circle cx="54" cy="60" r="4.5"/>
+    <circle cx="74" cy="60" r="4.5"/>
+    <circle cx="94" cy="60" r="4.5"/>
+  </g>
+</svg>
