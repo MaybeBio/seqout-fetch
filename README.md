@@ -121,6 +121,51 @@ seqout-fetch spatial --facets
 seqout-fetch single-cell --tissue kidney --raw -o kidney_raw.csv
 ```
 
+e.g.
+```bash
+# 1️⃣ we just want kidney single cell RNA sequencing data, whatever
+❯ seqout-fetch single-cell --modality scRNA-seq --tissue kidney --out kidney_scRNA-seq_collected.csv
+querying single-cell (modality=scRNA-seq, tissue=kidney)
+  fetched 100/749
+  fetched 200/749
+  fetched 300/749
+  fetched 400/749
+  fetched 500/749
+  fetched 600/749
+  fetched 700/749
+  fetched 749/749
+  matched 749 studies
+wrote kidney_scRNA-seq_collected.csv (749 rows, 14 columns)
+
+
+# 2️⃣ or single nucleus + kidney, whatever
+❯ seqout-fetch single-cell --modality snRNA-seq --tissue kidney --out kidney_snRNA-seq_collected.csv
+querying single-cell (modality=snRNA-seq, tissue=kidney)
+  fetched 100/145
+  fetched 145/145
+  matched 145 studies
+wrote kidney_snRNA-seq_collected.csv (145 rows, 14 columns)
+
+
+# 3️⃣ or spatial kidney
+# we can do it in single-cell mode, but the spatial table has more relevant columns
+❯ seqout-fetch spatial --tissue kidney --out kidney_spatial_collected_1.csv
+querying spatial (tissue=kidney)
+  fetched 77/77
+  matched 77 studies
+wrote kidney_spatial_collected_1.csv (77 rows, 13 columns)
+
+# we can also try it in single-cell mode
+❯ seqout-fetch single-cell --modality "Spatial Transcriptomics"   --tissue kidney --out kidney_spatial_collected_2.csv
+querying single-cell (modality=Spatial Transcriptomics, tissue=kidney)
+  fetched 77/77
+  matched 77 studies
+wrote kidney_spatial_collected_2.csv (77 rows, 14 columns)
+
+```
+
+
+
 ## Output columns
 
 Single-cell (14 columns):
